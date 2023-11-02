@@ -1,0 +1,112 @@
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.login-form,
+.signup-form {
+  max-width: 100%;
+  margin: auto;
+}
+
+.black-text {
+  color: black;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.login-signup-modal {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  max-height : 100%;
+  max-width: 35%; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+}
+
+.modal-header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-body button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Animation classes */
+.modal-entering {
+  transform: scale(0.7);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.modal-entered {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.modal-exiting {
+  transform: scale(0.7);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.modal-exited {
+  display: none;
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 20px 25px 30px;
+  margin-top: 1%;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+  width: 30%;
+  height: 30%;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .login-signup-modal {
+    max-width: 100%; /* Full width on smaller screens */
+    max-height: 100%;
+  }
+}
